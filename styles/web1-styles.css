@@ -1,0 +1,219 @@
+
+		body{
+			margin:0;
+			padding:0;
+			font-family: "Omnes", Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+		}
+		p, li{
+			margin:0 auto;
+			font-size:16px;
+		}
+
+		@fontface{
+			font-family: "Omnes";
+			src:url("http://pages.m.lexisnexis.co.uk/page.aspx?QS=c76003443ff9837dbe9632d13e515517a498f2cd4747a8d3432a8a6e45894a40");
+		}
+
+		.wrapper{
+			max-width: 1024px;
+			margin:0 auto;
+		}
+		.header-img{
+			width:100%;
+			height:0 auto;
+		}
+
+		.sec-content{
+			padding: 0 0 0 86px;
+		}
+
+		.sec-content h3{
+			font-size:28px;
+			color:#F02324;
+			font-weight: 500;
+		}
+
+		.sec-content p{
+			font-size:16px;
+			color:#353232;
+			line-height: 21px;
+			width: 75%;
+			display: inline-block;
+			text-align: left;
+			font-weight: 400;
+		}
+		
+		.sec-content-desc ul{
+			padding: 15px 0 0 15px;
+			margin: 0;
+			font-size:16px;
+			color:#353232;
+			line-height: 21px;
+			width: 75%;
+			display: inline-block;
+			text-align: left;
+			font-weight: 400;
+		}
+
+
+		.sec-content-desc{
+			padding: 40px 0 0 0;
+			float: left;
+			width: 60%;
+		}
+
+		.sec-content-img{
+			padding: 70px 0 0 0;
+			float: right;
+			width: 40%;
+			text-align:center;
+		}
+
+		.sec-content-img img{
+			box-shadow: 4px 4px 4px #b1aeae; 
+		}
+
+		.sec-content-bullets{
+			font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+			font-size:20px;
+		}
+
+		.sec-content-det{
+			font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+			font-size:20px;
+			width: 60%;
+			margin: 0 auto;
+			padding: 10px 0 0 0;
+		}
+
+		.btn-order{
+			background-color:#F02324;
+			color:#ffffff;
+			text-decoration: none;
+			padding: 12px 25px 12px 25px; 
+			margin: 30px 20px 0 20px;
+			border-radius: 6px;
+			font-weight: 500;
+			display: inline-block;
+			vertical-align:middle;
+			transition: transform 0.3s cubic-bezier(0.26, 0.62, 0.75, 1.01);
+			font-size: 24px;
+			position: relative;
+		}
+
+		.btn-order:hover{
+			box-shadow: 4px 6px #7e7d7d;
+			-moz-transform: translateY(-4px);
+			-o-transform: translateY(-4px);
+			-ms-transform: translateY(-4px);
+			-webkit-transform: translateY(-4px);
+			transform: translateY(-4px);
+			animation: none;
+		}
+
+		/*Arrow Keyframes*/
+
+		@keyframes arrow {
+			0% { transform: translateX(0); }
+			15% { transform: translateX(4px); }
+			30% { transform: translateX(7px); }
+			45% { transform: translateX(12px); }
+			60% { transform: translateX(7px); }
+			75% { transform: translateX(4px); }
+			100% { transform: translateX(0); }
+		}
+
+		/*Arrow Class */
+		.arrow{
+			padding: 0;
+			font-size: 28px;
+			display: inline-block;
+			animation: arrow 2s cubic-bezier(0.49, 0.37, 0.54, 0.41) infinite;
+			animation-play-state: running;
+		}
+
+		/*Footer Classes*/
+		.footer{
+			padding: 0 86px 30px 86px;
+			color:#353232;
+			clear: both;	
+		}
+
+		.brand-logo{
+			padding: 20px 0 0 0;
+			max-width: 220px;
+			height: auto;
+		}
+		.brand-sec{
+		}
+
+		.rights-sec{
+		}
+
+		.rights-txt{
+			font-size:10px;
+			line-height: 14px;
+		}
+
+		@media only screen and (max-width: 736px){
+			.sec-content-desc{
+				float: none;
+				width: auto;
+				padding: 10px 0 0 0 !important;
+			}
+
+			.sec-content p{
+				padding: 0;
+				width: 100%;
+			}
+
+			.sec-content-img{
+				float: none;
+				width: auto;	
+				padding: 30px 0 0 0 !important;		
+			}
+
+			.sec-content-img img{
+				text-align: center;
+			}
+
+			.sec-content-img a{
+				display: block;
+			}
+			.sec-content{
+				padding: 0 30px 0 30px;
+			}
+
+			.sec-content-det{
+				width: 100%;
+			}
+
+			.sec-content-det p{
+				text-align: center;
+			}
+
+
+			.footer{
+				padding: 0 30px 30px 30px;
+				text-align: center;
+			}
+
+			.brand-logo{
+				padding: 40px 0 0 0;
+				max-width: 250px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.rights-sec{
+				padding: 20px 0 0 0; 
+			}
+			.rights-txt{
+				font-size:10px;
+			}
+		}
+
+		@media only screen and (max-width: 640px){
+			
+		}

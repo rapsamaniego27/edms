@@ -1,0 +1,14 @@
+
+var btnOrder = document.getElementById('btnOrder');
+var btnArrow = document.getElementById('btnArrow');
+
+btnOrder.onmouseover = function() {mouseOver()};
+btnOrder.onmouseout = function() {mouseOut()};
+
+function mouseOver(){
+	btnArrow.style.animationPlayState = "paused";
+}
+
+function mouseOut(){
+	btnArrow.style.animationPlayState = "running";
+}
